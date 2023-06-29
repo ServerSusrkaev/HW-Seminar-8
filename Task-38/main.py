@@ -12,7 +12,7 @@ while myChoise != 0:
     print('1 - Вывести информацию на экран')
     print('2 - Произвести экспорт данных')
     print('3 - Произвести изменение данных')
-    print('3 - Произвести удаление данных')
+    print('4 - Произвести удаление данных')
     print('0 - Выход из программы')
 
     action = int(input('Дейстие: '))
@@ -25,6 +25,6 @@ while myChoise != 0:
         functions.editData(fileTel)
     elif action == 4:
         functions.deleteData(fileTel)
-    else:
-        action == 0
-print('До свидания!')    
+    elif action == 0:
+        print('До свидания!')
+        exit()
